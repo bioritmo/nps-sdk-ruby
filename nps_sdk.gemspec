@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.description = "Ruby SDK for NPS Services"
   s.authors     = ["merchantservices@ingenico.com"]
   s.email       = 'merchantservices@ingenico.com'
-  s.add_runtime_dependency 'savon', '~> 2.11'
-  s.add_runtime_dependency 'httpclient', '~> 2.7.1'
+  s.add_runtime_dependency 'savon', '~> 2.14'
+  s.add_runtime_dependency 'httpclient', '~> 2.8'
   s.add_runtime_dependency 'certifi', '~> 2018.1', '>= 2018.01.18'
   s.add_runtime_dependency 'inifile', '~> 3.0'
   s.files       = ["lib/nps_sdk.rb",

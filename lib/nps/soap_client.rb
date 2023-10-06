@@ -1,5 +1,7 @@
 require 'certifi'
 require_relative 'services'
+require_relative "api_exception"
+
 module Nps
   class SoapClient
 
@@ -9,10 +11,10 @@ module Nps
       end
 
       if conf.log_level != Logger::DEBUG
-        conf.logger.formatter = NpsFormatter.new
+        conf.logger.formatter = ::Nps::NpsFormatter.new
       end
       if conf.log_level == Logger::DEBUG and conf.environment == Nps::Environments::PRODUCTION_ENV
-        raise LoggerException
+        raise ::LoggerException
       end  
 
       @key = conf.key

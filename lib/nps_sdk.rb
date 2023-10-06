@@ -1,10 +1,10 @@
+require_relative "nps/api_exception"
 require_relative "nps/nps_formatter"
 require_relative "nps/sdk"
 require_relative "nps/services"
 require_relative "nps/environments"
 require_relative "nps/configuration"
 require_relative "nps/utils"
-require_relative "nps/api_exception"
 require_relative "nps/version"
 require 'logger'
 require 'inifile'
